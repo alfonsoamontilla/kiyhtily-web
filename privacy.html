@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — kiyhtily</title>
+<meta name="description" content="kiyhtily Privacy Policy">
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --card: #111827;
+    --text: #f3f4f6;
+    --muted: #9ca3af;
+    --accent: #00e5a0;
+    --border: #1f2937;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont,
+      'SF Pro Text', 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  .back {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  .back:hover { opacity: 0.8; }
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  p, li {
+    color: var(--muted);
+    font-size: 15px;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--text); }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+  .footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+  }
+  .footer em { color: var(--accent); font-style: normal; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="/">← Back to kiyhtily</a>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Last Updated: May 28, 2026 · Effective Date: May 28, 2026</p>
+
+<p>kiyhtily ("we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, store, and protect your information when you use the kiyhtily mobile application (the "App").</p>
+
+<p>By using the App, you agree to the practices described in this Privacy Policy.</p>
+
+<hr>
+
+<h2>1. Information We Collect</h2>
+
+<h3>Information You Provide</h3>
+<ul>
+  <li><strong>Account information:</strong> email address, name, profile preferences</li>
+  <li><strong>Financial information:</strong> transactions, budgets, income, goals, and reconciliation data you enter or import</li>
+  <li><strong>Bank statement images and PDFs</strong> you upload for OCR processing</li>
+  <li><strong>Receipt images</strong> you scan for itemized expense tracking</li>
+  <li><strong>Payroll schedule</strong> information you enter</li>
+  <li><strong>Communications:</strong> messages sent through our support channels</li>
+</ul>
+
+<h3>Information Collected Automatically</h3>
+<ul>
+  <li><strong>Device data:</strong> device type, operating system, app version</li>
+  <li><strong>Usage data:</strong> features used, screens viewed, errors encountered</li>
+  <li><strong>Location data:</strong> approximate location for nearby place suggestions and geofence reminders (only when you grant permission and use related features)</li>
+  <li><strong>Subscription data:</strong> managed through Apple App Store or Google Play via RevenueCat</li>
+</ul>
+
+<h3>Information We Do NOT Collect</h3>
+<ul>
+  <li>We do not collect your bank login credentials.</li>
+  <li>We do not connect directly to your bank account.</li>
+  <li>We do not sell your data.</li>
+  <li>We do not use your financial data for advertising.</li>
+</ul>
+
+<h2>2. How We Use Your Information</h2>
+<p>We use your information to:</p>
+<ul>
+  <li>Provide the App's core functionality (budgeting, OCR import, receipt scanning, reconciliation, insights, navigation)</li>
+  <li>Process bank statement and receipt images via AI services (Claude API by Anthropic)</li>
+  <li>Generate personalized financial insights and nudges</li>
+  <li>Process subscriptions and entitlements via RevenueCat</li>
+  <li>Send push notifications related to your budgets, goals, and reminders</li>
+  <li>Improve App performance and fix bugs</li>
+  <li>Provide customer support</li>
+  <li>Comply with legal obligations</li>
+</ul>
+
+<h2>3. AI Processing</h2>
+<p>When you upload a bank statement or receipt image, the image is sent to Anthropic's Claude API for OCR and parsing. Anthropic processes the image and returns extracted transaction data.</p>
+<ul>
+  <li>Images are transmitted over encrypted HTTPS.</li>
+  <li>Anthropic does not use API customer data to train their models (per Anthropic's API data policy).</li>
+  <li>Anthropic retains data briefly for abuse monitoring then deletes it.</li>
+  <li>We do not store the original image or PDF in our database — only the extracted transaction data.</li>
+</ul>
+
+<h2>4. Data Storage</h2>
+<p>Your data is stored in Supabase, a secure cloud database provider:</p>
+<ul>
+  <li>All data is encrypted in transit (HTTPS) and at rest.</li>
+  <li>Row-level security ensures only you can access your own data.</li>
+  <li>Authentication is handled via Supabase Auth.</li>
+  <li>Servers are hosted in the United States.</li>
+</ul>
+
+<h2>5. Third-Party Services</h2>
+<p>We use the following third-party services. Each has its own privacy policy:</p>
+<ul>
+  <li><strong>Anthropic (Claude AI):</strong> OCR and AI processing — <a href="https://anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></li>
+  <li><strong>Supabase:</strong> database and authentication — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></li>
+  <li><strong>RevenueCat:</strong> subscription management — <a href="https://revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
+  <li><strong>Firebase Cloud Messaging:</strong> push notifications — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+  <li><strong>Google Maps Platform:</strong> location and place data — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+  <li><strong>Apple App Store / Google Play:</strong> app distribution and in-app purchases</li>
+</ul>
+<p>We do not share your financial data with these services beyond what is required for the App to function.</p>
+
+<h2>6. Your Rights and Choices</h2>
+<p>You have the right to:</p>
+<ul>
+  <li><strong>Access</strong> your data — visible at all times within the App</li>
+  <li><strong>Export</strong> your data — contact <a href="mailto:support@kiyhtily.com">support@kiyhtily.com</a></li>
+  <li><strong>Delete</strong> your account and all associated data — contact <a href="mailto:support@kiyhtily.com">support@kiyhtily.com</a> or use in-app deletion</li>
+  <li><strong>Opt out of notifications</strong> — toggle in App or device settings</li>
+  <li><strong>Revoke location access</strong> — device settings</li>
+  <li><strong>Cancel subscription</strong> — through Apple App Store or Google Play</li>
+</ul>
+<p>We will respond to data requests within 30 days.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>kiyhtily is not intended for children under 13. We do not knowingly collect data from children under 13. If we learn that we have collected such data, we will delete it promptly. If you believe a child has provided us information, contact <a href="mailto:support@kiyhtily.com">support@kiyhtily.com</a>.</p>
+
+<h2>8. Security</h2>
+<p>We use industry-standard security practices including:</p>
+<ul>
+  <li>Encryption in transit (TLS/HTTPS)</li>
+  <li>Encryption at rest</li>
+  <li>Row-level access controls</li>
+  <li>Secure authentication tokens</li>
+  <li>Regular security review of dependencies</li>
+</ul>
+<p>No system is 100% secure. If you believe your account has been compromised, contact <a href="mailto:support@kiyhtily.com">support@kiyhtily.com</a> immediately.</p>
+
+<h2>9. Data Retention</h2>
+<ul>
+  <li><strong>Active accounts:</strong> data retained while your account is active.</li>
+  <li><strong>Deleted accounts:</strong> data permanently deleted within 30 days of deletion request.</li>
+  <li><strong>Bank statement images:</strong> never stored — discarded after AI processing.</li>
+  <li><strong>Receipt images:</strong> never stored — discarded after AI processing.</li>
+</ul>
+
+<h2>10. International Users</h2>
+<p>The App is operated from the United States. If you use the App from outside the US, your data will be transferred to and processed in the US. By using the App, you consent to this transfer.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Material changes will be communicated through the App and reflected in the "Last Updated" date above. Continued use of the App after changes constitutes acceptance.</p>
+
+<h2>12. Contact Us</h2>
+<p>Questions about this Privacy Policy or your data?</p>
+<p><strong>Email:</strong> <a href="mailto:support@kiyhtily.com">support@kiyhtily.com</a><br>
+<strong>Website:</strong> <a href="/">kiyhtily.com</a></p>
+
+<div class="footer">
+  <p><em>kiyhtily — Know in your heart that I love you.</em></p>
+  <p>© 2026 kiyhtily. All rights reserved.</p>
+</div>
+
+</div>
+</body>
+</html>
